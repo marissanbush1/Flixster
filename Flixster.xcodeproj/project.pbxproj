@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D8E12C051EFB203800E23131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E12C041EFB203800E23131 /* AppDelegate.swift */; };
-		D8E12C071EFB203800E23131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E12C061EFB203800E23131 /* ViewController.swift */; };
 		D8E12C0A1EFB203800E23131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E12C081EFB203800E23131 /* Main.storyboard */; };
 		D8E12C0C1EFB203800E23131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E12C0B1EFB203800E23131 /* Assets.xcassets */; };
 		D8E12C0F1EFB203800E23131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E12C0D1EFB203800E23131 /* LaunchScreen.storyboard */; };
 		D8E12C1A1EFB203800E23131 /* FlixsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E12C191EFB203800E23131 /* FlixsterTests.swift */; };
 		D8E12C251EFB203800E23131 /* FlixsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E12C241EFB203800E23131 /* FlixsterUITests.swift */; };
+		D8E12C351EFB373000E23131 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E12C341EFB373000E23131 /* NowPlayingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		D8E12C011EFB203800E23131 /* Flixster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E12C041EFB203800E23131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8E12C061EFB203800E23131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8E12C091EFB203800E23131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8E12C0B1EFB203800E23131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8E12C0E1EFB203800E23131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		D8E12C201EFB203800E23131 /* FlixsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E12C241EFB203800E23131 /* FlixsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixsterUITests.swift; sourceTree = "<group>"; };
 		D8E12C261EFB203800E23131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8E12C341EFB373000E23131 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		D8E12C031EFB203800E23131 /* Flixster */ = {
 			isa = PBXGroup;
 			children = (
+				D8E12C341EFB373000E23131 /* NowPlayingViewController.swift */,
 				D8E12C041EFB203800E23131 /* AppDelegate.swift */,
-				D8E12C061EFB203800E23131 /* ViewController.swift */,
 				D8E12C081EFB203800E23131 /* Main.storyboard */,
 				D8E12C0B1EFB203800E23131 /* Assets.xcassets */,
 				D8E12C0D1EFB203800E23131 /* LaunchScreen.storyboard */,
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E12C071EFB203800E23131 /* ViewController.swift in Sources */,
+				D8E12C351EFB373000E23131 /* NowPlayingViewController.swift in Sources */,
 				D8E12C051EFB203800E23131 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
