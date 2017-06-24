@@ -21,6 +21,9 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         activityIndicator.startAnimating()
         
+        let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: .alert)
+
+        
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(NowPlayingViewController.didPullToRefresh(_:)) , for: .valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
