@@ -40,7 +40,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         let task = session.dataTask(with: request) { (data, response, error) in
             //This will run when the network request returns
             if let error = error {
-                let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: .alert)
+                print(error.localizedDescription)
             } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 let movies = dataDictionary["results"] as! [[String: Any]]
