@@ -20,8 +20,6 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicator.startAnimating()
-        
-        let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: .alert)
 
         
         refreshControl = UIRefreshControl()
@@ -42,7 +40,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         let task = session.dataTask(with: request) { (data, response, error) in
             //This will run when the network request returns
             if let error = error {
-                print(error.localizedDescription)
+                let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: .alert)
             } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 let movies = dataDictionary["results"] as! [[String: Any]]
